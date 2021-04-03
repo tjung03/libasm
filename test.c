@@ -6,7 +6,7 @@
 /*   By: tjung <tjung@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/31 21:54:42 by tjung             #+#    #+#             */
-/*   Updated: 2021/04/04 01:20:02 by tjung            ###   ########.fr       */
+/*   Updated: 2021/04/04 02:43:40 by tjung            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@
 //char		*ft_strcpy(char *dst, char *src);
 //int			ft_strcmp(char *s1, char *s2);
 //ssize_t		ft_write(int filds, void *buf, size_t nbyte);
-ssize_t		ft_read(int fildes, void *buf, size_t nbyte);
+//ssize_t		ft_read(int fildes, void *buf, size_t nbyte);
+char		*ft_strdup(char *s1);
 
 int			main(int ac, char **av)
 {
@@ -85,6 +86,21 @@ int			main(int ac, char **av)
 	ret = ft_read(0, buf, 8);
 	printf("ft ret : %d\n", ret);
 	printf("og : %s\n", buf);
+	*/
+
+/*
+	// ft_strdup
+	char	*s1 = "test";
+	char	*s2;
+
+	printf("s1 : %s\n", s1);
+	printf("s2 : %s\n", s2);
+	printf("----ft----\n");
+	s2 = ft_strdup(s1);
+	printf("s2 : %s\n", s2);
+	printf("----og----\n");
+	s2 = strdup(s1);
+	printf("s2 : %s\n", s2);
 	*/
 	return (0);
 }

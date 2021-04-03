@@ -10,7 +10,7 @@ _ft_read:
 	jc		_err					; error ? goto _err
 	ret
 _err:
-	push	rax						; Stored error values in stack
+	push	rax						; stored error values in stack
 	call	___error				; rax = error address
 	pop		rdx						; rdx = error values (from stack)
 	mov		[rax], rdx				; [rax] = error values (only rax values, No change address)
