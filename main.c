@@ -6,7 +6,7 @@
 /*   By: tjung <tjung@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/31 21:54:42 by tjung             #+#    #+#             */
-/*   Updated: 2021/04/06 02:04:20 by tjung            ###   ########.fr       */
+/*   Updated: 2021/04/06 02:22:51 by tjung            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int			main(int ac, char **av)
 {
 	int		len;
 	int		ret;
-	char	*s1 = "test";
+	char	*s1;
 	char	*d;
 	char	buf[9];
 
@@ -37,6 +37,7 @@ int			main(int ac, char **av)
 
 	// ft_strcpy
 	printf("\n====ft_strcpy====\n");
+	s1 = "test";
 	d = malloc(sizeof(char) * 5);
 	ft_strcpy(d, s1);
 	printf("s1 : %s\n", s1);
