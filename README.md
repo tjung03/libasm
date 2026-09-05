@@ -71,6 +71,4 @@ cc -arch x86_64 example.c libasm.a -o example
 | 시스템 호출 | Darwin 번호와 오류 처리 규약 |
 | Apple silicon | x86-64 바이너리는 Rosetta 지원 환경 필요 — [Apple 안내](https://developer.apple.com/documentation/apple-silicon/about-the-rosetta-translation-environment) |
 
-Linux 이식에는 ELF 형식·심볼 이름·syscall 번호·오류 처리 규약을 함께 변경해야 합니다. ARM64 네이티브 실행에는 명령어와 호출 규약에 맞는 별도 구현이 필요합니다.
-
 `make clean`은 오브젝트, `make fclean`은 라이브러리와 기존 테스트 실행 파일까지 삭제하며, `make re`는 전체를 다시 빌드합니다.
